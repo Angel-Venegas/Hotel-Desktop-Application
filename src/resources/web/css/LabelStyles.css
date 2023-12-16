@@ -1,0 +1,19 @@
+.transparent-background {
+    -fx-background-color: rgba(0, 0, 0, 0.8);
+    -fx-padding: 10px;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0.5, 0, 2); /* Adding a subtle drop shadow */
+}
+
+.transparent-blue-background {
+    -fx-background-color: rgba(40, 40, 40, .8);
+    -fx-padding: 10px;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0.5, 0, 2); /* Adding a subtle drop shadow */
+}
+
+.silver-background {
+    -fx-background-color: rgba(100, 100, 100, 1.0);
+    -fx-padding: 10px;
+    -fx-background-radius: 0px;
+}

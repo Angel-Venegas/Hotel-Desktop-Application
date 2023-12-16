@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: rgb(0,0,70);" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="boundary.LoginMenuController">
+   <children>
+      <ImageView fitHeight="1086.0" fitWidth="1927.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../web/images/hotelRoom.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="managerButton" contentDisplay="CENTER" layoutX="1284.0" layoutY="193.0" mnemonicParsing="false" onAction="#managerLoginScene" prefHeight="240.0" prefWidth="640.0" stylesheets="@../../web/css/ButtonTexture.css" text="Manager Login">
+         <font>
+            <Font name="Bell MT Bold" size="75.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.2823529541492462" green="0.8352941274642944" blue="0.9333333373069763" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="userButton" contentDisplay="CENTER" layoutY="193.0" mnemonicParsing="false" onAction="#guestLoginScene" prefHeight="240.0" prefWidth="640.0" stylesheets="@../../web/css/ButtonTexture.css" text="Guest Login">
+         <font>
+            <Font name="Bell MT Bold" size="75.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.2823529541492462" green="0.8352941274642944" blue="0.9333333373069763" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="registerButton" contentDisplay="CENTER" layoutX="640.0" layoutY="193.0" mnemonicParsing="false" onAction="#registerUserScene" prefHeight="240.0" prefWidth="640.0" stylesheets="@../../web/css/ButtonTexture.css" text="Register User">
+         <font>
+            <Font name="Bell MT Bold" size="75.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.2823529541492462" green="0.8352941274642944" blue="0.9333333373069763" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+   </children>
+</AnchorPane>

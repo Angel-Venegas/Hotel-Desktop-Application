@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="myBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" stylesheets="@../../../web/css/BorderPaneTexture.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="boundary.hoteloptionspackage.RegisterRoomController">
+   <top>
+      <AnchorPane fx:id="myAnchorPane" prefHeight="90.0" prefWidth="1920.0" style="-fx-background-color: rgb(20,20,20);" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="userCredentialLabel" layoutX="14.0" layoutY="14.0" prefHeight="66.0" prefWidth="1240.0" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="36.0" />
+               </font>
+            </Label>
+            <ButtonBar layoutX="1236.0" prefHeight="92.0" prefWidth="670.0">
+               <buttons>
+                  <Button fx:id="registerButton" mnemonicParsing="false" onAction="#registerOnAction" prefHeight="66.0" prefWidth="307.0" text="Register">
+                     <font>
+                        <Font name="Bell MT Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#goBackOnAction" prefHeight="66.0" prefWidth="307.0" text="Cancel">
+                     <font>
+                        <Font name="Bell MT Bold" size="20.0" />
+                     </font>
+                  </Button>
+               </buttons>
+            </ButtonBar>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="937.0" prefWidth="494.0" BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="roomListView" layoutX="94.0" layoutY="100.0" prefHeight="778.0" prefWidth="400.0" />
+            <Label alignment="CENTER" blendMode="LIGHTEN" layoutX="94.0" prefHeight="100.0" prefWidth="400.0" text="Available Rooms" textAlignment="CENTER">
+               <font>
+                  <Font name="Bell MT Bold" size="54.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.7372549176216125" green="0.7372549176216125" blue="0.7372549176216125" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ComboBox fx:id="floorDropDown" layoutX="187.0" layoutY="200.0" prefHeight="25.0" prefWidth="440.0" />
+            <ComboBox fx:id="roomDropDown" layoutX="827.0" layoutY="200.0" prefHeight="25.0" prefWidth="440.0" />
+            <ComboBox fx:id="numPeopleDropDown" layoutX="187.0" layoutY="633.0" prefHeight="25.0" prefWidth="440.0" />
+            <ComboBox fx:id="paymentDropDown" layoutX="827.0" layoutY="633.0" prefHeight="25.0" prefWidth="440.0" />
+            <Label alignment="CENTER" blendMode="SRC_ATOP" layoutX="187.0" layoutY="533.0" prefHeight="100.0" prefWidth="440.0" styleClass="transparent-background" stylesheets="@../../../web/css/LabelStyles.css" text="Number Of People" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Bell MT Bold" size="48.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" blendMode="SRC_ATOP" layoutX="187.0" layoutY="100.0" prefHeight="100.0" prefWidth="440.0" styleClass="transparent-background" stylesheets="@../../../web/css/LabelStyles.css" text="Choose A Floor" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Bell MT Bold" size="48.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" blendMode="SRC_ATOP" layoutX="827.0" layoutY="100.0" prefHeight="100.0" prefWidth="440.0" styleClass="transparent-background" stylesheets="@../../../web/css/LabelStyles.css" text="Choose A Room" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Bell MT Bold" size="48.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" blendMode="SRC_ATOP" layoutX="827.0" layoutY="533.0" prefHeight="100.0" prefWidth="440.0" styleClass="transparent-background" stylesheets="@../../../web/css/LabelStyles.css" text="Payment" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Bell MT Bold" size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="110.0" prefWidth="1920.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

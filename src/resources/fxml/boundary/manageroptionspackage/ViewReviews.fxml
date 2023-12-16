@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="boundary.manageroptionspackage.ViewReviewsController">
+   <bottom>
+      <BorderPane blendMode="MULTIPLY" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(230,230,230);" BorderPane.alignment="CENTER">
+         <top>
+            <AnchorPane blendMode="DARKEN" prefHeight="50.0" prefWidth="200.0" styleClass="anchorPaneBackground" stylesheets="@../../../web/css/AnchorPaneStyles.css" BorderPane.alignment="CENTER" />
+         </top>
+         <bottom>
+            <AnchorPane blendMode="DARKEN" prefHeight="100.0" prefWidth="1920.0" styleClass="anchorPaneBackground" stylesheets="@../../../web/css/AnchorPaneStyles.css" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </bottom>
+   <top>
+      <BorderPane blendMode="MULTIPLY" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(230,230,230);" BorderPane.alignment="CENTER">
+         <top>
+            <AnchorPane blendMode="DARKEN" prefHeight="100.0" prefWidth="200.0" styleClass="anchorPaneBackground" stylesheets="@../../../web/css/AnchorPaneStyles.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" layoutX="1572.0" layoutY="18.0" mnemonicParsing="false" onAction="#goBackOnAction" prefHeight="65.0" prefWidth="307.0" text="Go Back" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="Serif Regular" size="36.0" />
+                     </font>
+                     <effect>
+                        <DropShadow height="128.71" radius="67.7025" width="144.1">
+                           <color>
+                              <Color red="0.6705882549285889" green="0.6705882549285889" blue="0.6705882549285889" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Button>
+                  <Label alignment="CENTER" blendMode="DARKEN" layoutX="356.0" layoutY="-7.0" prefHeight="105.0" prefWidth="1209.0" style="-fx-background-color: white;" text="Guest Reviews" textAlignment="CENTER">
+                     <font>
+                        <Font name="Bell MT Bold" size="80.0" />
+                     </font>
+                     <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane blendMode="DARKEN" prefHeight="50.0" prefWidth="200.0" styleClass="anchorPaneBackground" stylesheets="@../../../web/css/AnchorPaneStyles.css" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="680.0" prefWidth="1852.0" styleClass="anchorPaneBackground" stylesheets="@../../../web/css/AnchorPaneStyles.css" BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="listView" layoutX="522.0" layoutY="185.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

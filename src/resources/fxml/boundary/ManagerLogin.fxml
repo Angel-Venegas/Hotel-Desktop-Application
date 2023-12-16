@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="boundary.ManagerLoginController">
+   <left>
+      <AnchorPane prefHeight="1080.0" prefWidth="699.0" style="-fx-background-color: rgb(0,0,70);" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="184.0" layoutY="27.0" prefHeight="114.0" prefWidth="332.0" text="Hotel" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT" size="96.0" />
+               </font>
+            </Label>
+            <Line endX="568.0" layoutX="116.0" layoutY="141.0" startX="-100.0" stroke="#fcf6f6" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Line>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane blendMode="MULTIPLY" prefHeight="1080.0" prefWidth="1238.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="110.0" prefHeight="206.0" prefWidth="1035.0" text="Manager Login" textFill="#b50000">
+               <font>
+                  <Font name="Bell MT Bold" size="96.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passwordTextField" layoutX="271.0" layoutY="480.0" prefHeight="120.0" prefWidth="865.0">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="loginButton" layoutX="111.0" layoutY="762.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="86.0" prefWidth="1033.0" style="-fx-background-color: rgb(0,0,70);" text="Login" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutX="89.0" layoutY="319.0" prefHeight="120.0" prefWidth="178.0" text="Username" textFill="#b50000">
+               <font>
+                  <Font name="Bell MT" size="36.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameTextField" layoutX="271.0" layoutY="319.0" prefHeight="120.0" prefWidth="865.0">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </TextField>
+            <Button fx:id="cancelButton" layoutX="111.0" layoutY="864.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="86.0" prefWidth="1033.0" style="-fx-background-color: rgb(0,0,70);" text="Cancel" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutX="89.0" layoutY="480.0" prefHeight="120.0" prefWidth="178.0" text="Password" textFill="#b50000">
+               <font>
+                  <Font name="Bell MT" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

@@ -1,0 +1,4 @@
+#myBorderPane {
+    -fx-background-image: url('../images/blackElegant.jpg');
+    -fx-background-size: cover
+}

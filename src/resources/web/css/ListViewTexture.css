@@ -1,0 +1,24 @@
+/* Apply styles to the ListView */
+.list-view {
+    -fx-background-color: black;
+    -fx-padding: 10;
+}
+
+/* Apply styles to the ListView cells */
+.list-cell {
+    -fx-background-color: white;
+    -fx-font-size: 14px;
+}
+
+/* Style the selected cell */
+.list-cell:selected {
+    -fx-background-color: #0078d4;
+    -fx-text-fill: white;
+}
+
+/* Apply border styles to all ListView cells */
+.list-view .list-cell {
+    -fx-border-color: #cccccc;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-style: solid;
+}

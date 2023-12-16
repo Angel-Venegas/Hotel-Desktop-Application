@@ -1,0 +1,13 @@
+.anchorPaneBackground {
+    -fx-border-width: 1px; /* Add a border */
+    -fx-background-color: rgb(255,255,255);
+    -fx-border-color: rgb(220,220,220); /* Light gray border color */
+    -fx-border-radius: 0px; /* Rounded corners */
+    -fx-padding: 0px; /* Add some padding to the AnchorPane */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 10, 0, 0, 0); /* Box shadow */
+    -fx-background-radius: 0px; /* Rounded corners for the background */
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+
+    -fx-background-image: url('../images/whiteTextureShadow.jpg');
+}
