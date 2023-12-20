@@ -32,8 +32,18 @@ public class FileSystem {
                 System.out.println("systemFile.txt Opened Successfully");
         } catch (IOException e) { System.out.println("Error: " +  e); }
 
-        if (systemFile.exists() && systemFile.length() == 0)
-            database.parseIntoTextFile(systemFile, 1);
+        if (systemFile.exists() && systemFile.length() == 0) {
+            if (database.initializeTables()) { // Meaning tables do not exist so tables were now put in the database
+                database.exportDataToFile(systemFile); // Writes already typed data to a text file
+                parseIntoDatabase(); // Parse the text file information into the database
+            }
+            else { // The tables existed
+                database.parseIntoTextFile(systemFile, 1); // Writes data from the database into the text file
+            }
+        }
+        else if (database.initializeTables()) { // The systemFile exists and is not empty and the tables do not exist in the database
+            parseIntoDatabase(); // Parse the text file information into the database
+        }
     }
 
 
