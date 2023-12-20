@@ -1,3 +1,10 @@
+This is a hotel system project that utilizes Java, JavaFX, MySQL, CSS, Images, 1 text file, and FXML files. It was created on Windows 11 and the IDE is IntelliJ.
+
+It allows a user to be registered into the system as a guest, can log in as a guest, or can log in as a manager.
+A guest may register for a room, cancel a room, change a room based on certain criteria such as the number of guests they brought with them and the price they initially paid for a room, view room, review their rooms, update their personal information, as well as logout. Everything updates live during the execution of the application and information remains saved even after the application is terminated and run again. For example, if a user registers for a room, then a live view of rooms available will be updated to not display that registered room anymore since it has already been taken.
+A manager can view the room reviews and look at all the guests registered in the system along with all of their information.
+
+
 1. Install the latest version of IntelliJ. I used the community version.
 
 2. Upon cloning and then opening this repository, you will need to download Java OpenJDK-21.0.1 or higher.
