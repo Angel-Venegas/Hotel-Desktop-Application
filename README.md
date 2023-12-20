@@ -21,4 +21,7 @@
 8. Click on that instance and enter the password "HotelGuestLogin123".
 9. After logging in you may navigate to schemas to observe any data from the program.
 
-10. 
+10. Since there are no tables, upon runnning the program a textfile within the program as well as the database in mySQL will automatically be populated with data.
+11. You may register a new user if you wish and begin using the hotel application!
+
+12. To login as a manager in the hotel application the username is "m" and the password is "p".
