@@ -30,7 +30,7 @@ public class Main extends Application {
         longinMenu.setObjects(mainSystem.database, mainSystem.fileSystem, mainSystem.hotelRooms, mainSystem.managementSystem);
 
         Scene mainScene = new Scene(mainLogin);
-        primaryStage.setMaximized(true);
+        // primaryStage.setMaximized(true);
         primaryStage.setScene(mainScene);
         primaryStage.show();
     }
