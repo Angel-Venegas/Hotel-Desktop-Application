@@ -44,6 +44,6 @@ public class Main extends Application {
         mainSystem.fileSystem = new FileSystem(mainSystem.database);
         mainSystem.hotelRooms = new HotelRooms(mainSystem.fileSystem);
         mainSystem.managementSystem = new ManagementSystem(mainSystem.fileSystem, mainSystem.hotelRooms);
-        launch(args);
+        launch(args); // Launches App
     }
 }
