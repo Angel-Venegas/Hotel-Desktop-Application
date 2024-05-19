@@ -4,6 +4,8 @@ It allows a user to be registered into the system as a guest, can log in as a gu
 A guest may register for a room, cancel a room, change a room based on certain criteria such as the number of guests they brought with them and the price they initially paid for a room, view room, review their rooms, update their personal information, as well as logout. Everything updates live during the execution of the application and information remains saved even after the application is terminated and run again. For example, if a user registers for a room, then a live view of rooms available will be updated to not display that registered room anymore since it has already been taken.
 A manager can view the room reviews and look at all the guests registered in the system along with all of their information.
 
+GitHub Desktop, SceneBuilder, XML, Java, CSS, IntelliJ, MySQL Workbench, and txt files.
+
 
 1. Install the latest version of IntelliJ. I used the community version.
 
