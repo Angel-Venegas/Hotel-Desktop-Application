@@ -17,7 +17,7 @@ GitHub Desktop, SceneBuilder, XML, Java, CSS, IntelliJ, MySQL Workbench, and txt
 
 5. Download the MySQL driver "https://www.mysql.com/products/connector/", select "JDBC Driver for MySQL (Connector/J)", and then download the one that is "Platform Independent". Then unzip it to a location you will remember.
 
-6. On the project with IntelliJ, click "File", "Project Structure", "Libraries", "+", "Java", navigate to the MySQL connector folder and open it to select the .jar file (the one I used is called "mysql-connector-j-8.2.0.jar". Click on it and then click ok and then "Apply".
+6. On the project with IntelliJ, click "File", "Project Structure", "Libraries", "+", "Java", navigate to the MySQL connector folder and open it to select the .jar file (the one I used is called "mysql-connector-j-8.2.0.jar". Click on it and then click ok and then "Apply". Restart IntelliJ so the dependencies are resolved.
 
 7. Install MySQL community editions and if on Windows 11 "https://dev.mysql.com/downloads/installer/" select version 8.0.35 or higher and "https://dev.mysql.com/downloads/workbench/" version 8.0.35 or higher.
 
