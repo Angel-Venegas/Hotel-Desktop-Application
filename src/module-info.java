@@ -12,6 +12,9 @@ module Hotel {
     exports boundary;
     opens boundary;
 
+    exports control;
+    opens control;
+
     exports singleton;
     opens singleton;
 

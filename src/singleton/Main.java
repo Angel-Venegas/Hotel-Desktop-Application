@@ -38,6 +38,10 @@ public class Main extends Application {
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     public static void main(String[] args) {
+        System.setProperty("prism.order", "sw"); // It forces JavaFX to use software rendering instead of hardware-accelerated rendering through Direct3D
+        System.setProperty("prism.verbose", "true");
+        System.setProperty("prism.text", "t2k");
+
         mainSystem = new Main();
 
         mainSystem.database = new Database();

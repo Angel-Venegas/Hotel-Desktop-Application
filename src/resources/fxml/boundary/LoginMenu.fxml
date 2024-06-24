@@ -9,9 +9,9 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: rgb(0,0,70);" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="boundary.LoginMenuController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: rgb(0,0,0);" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="boundary.LoginMenuController">
    <children>
-      <ImageView fitHeight="1086.0" fitWidth="1927.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView cache="true" fitHeight="1086.0" fitWidth="1927.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.4;">
          <image>
             <Image url="@../../web/images/hotelRoom.png" />
          </image>

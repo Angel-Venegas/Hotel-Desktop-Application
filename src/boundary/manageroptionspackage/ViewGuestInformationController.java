@@ -19,9 +19,12 @@ import javafx.stage.Stage;
 import javafx.util.Callback;
 
 import java.util.ArrayList;
+import java.util.logging.Logger;
 
 
 public class ViewGuestInformationController implements SetterMethods {
+    private static final Logger logger = Logger.getLogger(ViewGuestInformationController.class.getName());
+
     private Database database;
     private FileSystem fileSystem;
     private Manager manager;
