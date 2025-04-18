@@ -364,6 +364,7 @@ public class Database {
 
 // Login Details:
 /*
+CREATE DATABASE hotel_db;
 CREATE USER 'HotelGuest'@'localhost' IDENTIFIED BY 'HotelGuestLogin123';
 GRANT ALL PRIVILEGES ON `hotel_db`.* TO 'HotelGuest'@'localhost';
 FLUSH PRIVILEGES;
